@@ -29,6 +29,7 @@ with open("latest_link.txt", "r") as file:
     else: 
         latest = True 
 
+# only post the news link if it is current 
 if (latest):
     with open("latest_link.txt", "w") as file:
         file.write(first_link)
